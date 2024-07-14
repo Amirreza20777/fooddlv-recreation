@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -29,26 +32,69 @@
             </li>
        </div>
     <div class="nav-bar-left">
-             <input placeholder="الان دلت چه غذایی میخواد؟" type="search" id="search-bar">
+             <div class="search-bar">
+            <input  placeholder="الان دلت چه غذایی میخواد؟" type="search" id="search-input">
+             <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+             </div>
+
              <a href="#" class="user-log-in">ورود | ثبت نام</a>  
             
      </div>    
        
     </nav>
-<div class="hero-setion">
-    <div class="hero-image">
-        <img class="hero-image-img" src="assets/pizza.png" alt="pizza">
-    </div>
-    <div class="hero-details">
-        <p class="hero-order-state">سفارش میپذیریم</p>
-        <h1 class="hero-slogan"> تجربه غذایی لذیذ و به یاد ماندنی</h1>
-        <p class="hero-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه 
-        </p>
-        <button type="button" class="hero-button" >اطلاعات رستوران</button>
-    </div>
-</div>
-
 </header> 
+<main>
+    <div class="hero-setion">
+        <div class="hero-image">
+            <img class="hero-image-img" src="assets/pizza.png" alt="pizza">
+        </div>
+    <div class="hero">
+        <div class="hero-details">
+            <p class="hero-order-state">سفارش میپذیریم</p>
+            <h1 class="hero-slogan"> تجربه غذایی لذیذ و به یاد ماندنی</h1>
+            <p class="hero-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه 
+            </p>
+            <button type="button" class="hero-button" >اطلاعات رستوران</button>
+        </div>
+    </div>
+    </div>
+    <div class="swiper">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                    <span>
+                        
+                    </span>
+                </div>
+
+
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
   
 </body>
+
 </html>
